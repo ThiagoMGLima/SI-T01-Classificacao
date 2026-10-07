@@ -1,0 +1,212 @@
+[
+  {
+    "id": "U {\"mlp__activation\": \"logistic\", \"mlp__alpha\": 0.0001, \"mlp__hidden_layer_sizes\": [2], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"sgd\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        2
+      ],
+      "mlp__activation": "logistic",
+      "mlp__solver": "sgd",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 0.0001,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.0,
+      "amarelo": 0.8198610905866706,
+      "vermelho": 0.8743945753955441,
+      "preto": 0.9412897016361886
+    },
+    "n_preditas": {
+      "verde": 0,
+      "amarelo": 3801,
+      "vermelho": 3015,
+      "preto": 3184
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"relu\", \"mlp__alpha\": 30.0, \"mlp__hidden_layer_sizes\": [2], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        2
+      ],
+      "mlp__activation": "relu",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 30.0,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.0,
+      "amarelo": 0.7889483581657746,
+      "vermelho": 0.7993103448275862,
+      "preto": 0.9163838321505708
+    },
+    "n_preditas": {
+      "verde": 0,
+      "amarelo": 3947,
+      "vermelho": 2621,
+      "preto": 3432
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"relu\", \"mlp__alpha\": 30.0, \"mlp__hidden_layer_sizes\": [32, 16], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        32,
+        16
+      ],
+      "mlp__activation": "relu",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 30.0,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.0,
+      "amarelo": 0.788579795021962,
+      "vermelho": 0.8065718157181572,
+      "preto": 0.918124129391735
+    },
+    "n_preditas": {
+      "verde": 0,
+      "amarelo": 3864,
+      "vermelho": 2725,
+      "preto": 3411
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"relu\", \"mlp__alpha\": 30.0, \"mlp__hidden_layer_sizes\": [64, 64], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        64,
+        64
+      ],
+      "mlp__activation": "relu",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 30.0,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.0,
+      "amarelo": 0.7888018566869742,
+      "vermelho": 0.7986912347167212,
+      "preto": 0.9156144133045888
+    },
+    "n_preditas": {
+      "verde": 0,
+      "amarelo": 3928,
+      "vermelho": 2628,
+      "preto": 3444
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"logistic\", \"mlp__alpha\": 0.0001, \"mlp__hidden_layer_sizes\": [1], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        1
+      ],
+      "mlp__activation": "logistic",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 0.0001,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.7063369397217929,
+      "amarelo": 0.8665083135391924,
+      "vermelho": 0.8537953795379538,
+      "preto": 0.9319222871584268
+    },
+    "n_preditas": {
+      "verde": 489,
+      "amarelo": 3349,
+      "vermelho": 2881,
+      "preto": 3281
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"logistic\", \"mlp__alpha\": 0.0001, \"mlp__hidden_layer_sizes\": [2], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        2
+      ],
+      "mlp__activation": "logistic",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 0.0001,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.8110896196002579,
+      "amarelo": 0.8771404821280133,
+      "vermelho": 0.8690763052208835,
+      "preto": 0.9412143662425512
+    },
+    "n_preditas": {
+      "verde": 746,
+      "amarelo": 3049,
+      "vermelho": 3046,
+      "preto": 3159
+    }
+  },
+  {
+    "id": "U {\"mlp__activation\": \"relu\", \"mlp__alpha\": 0.0001, \"mlp__hidden_layer_sizes\": [2], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "U",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        2
+      ],
+      "mlp__activation": "relu",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 0.0001,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.9132075471698113,
+      "amarelo": 0.9047383192999835,
+      "vermelho": 0.8616485124370021,
+      "preto": 0.9332473395678813
+    },
+    "n_preditas": {
+      "verde": 785,
+      "amarelo": 3091,
+      "vermelho": 2972,
+      "preto": 3152
+    }
+  },
+  {
+    "id": "E {\"mlp__activation\": \"relu\", \"mlp__alpha\": 0.0001, \"mlp__hidden_layer_sizes\": [64], \"mlp__learning_rate_init\": 0.001, \"mlp__max_iter\": 2000, \"mlp__solver\": \"adam\"}",
+    "eixo": "E",
+    "hiper": {
+      "mlp__hidden_layer_sizes": [
+        64
+      ],
+      "mlp__activation": "relu",
+      "mlp__solver": "adam",
+      "mlp__learning_rate_init": 0.001,
+      "mlp__alpha": 0.0001,
+      "mlp__max_iter": 2000
+    },
+    "f1_validacao_por_classe": {
+      "verde": 0.9252217997465145,
+      "amarelo": 0.9526201238908422,
+      "vermelho": 0.935905612244898,
+      "preto": 0.9616318601262749
+    },
+    "n_preditas": {
+      "verde": 773,
+      "amarelo": 3007,
+      "vermelho": 3093,
+      "preto": 3127
+    }
+  }
+]
