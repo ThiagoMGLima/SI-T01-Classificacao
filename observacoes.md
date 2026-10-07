@@ -52,3 +52,12 @@ Observado ao montar o módulo de validação cruzada (ticket "Montar o módulo d
 21. **Mesmos folds para todos**: toda hiperparametrização, de CART e de RN, é avaliada na mesma divisão: 8.000 vítimas de treino e 2.000 de validação por fold, com 161 verdes em cada fold de validação.
 22. **Classe nunca predita**: entra com F1 0 no F1 macro (`zero_division=0`, sem aviso), o que pesa nas U muito simples. Um classificador que sempre prediz a classe mais frequente tem F1 macro médio de validação 0.12061.
 23. **Pontos de referência (não são U/E/O)**: a árvore com hiperparâmetros padrão (sem limite de profundidade) dá treino 1.00000 (0.00000), validação 0.87844 (0.00405) e diferença 0.12156 (0.00405), em 0,2 s por avaliação. A RN padrão (`MLPClassifier()` no Pipeline) dá treino 0.94548 (0.00143), validação 0.94386 (0.00620) e diferença 0.00624 (0.00467), em ~12 s por avaliação, e não converge em 200 iterações (`ConvergenceWarning` em todos os folds).
+
+## Relatório PDF
+
+Decidido com o usuário a partir de protótipos (ticket "Definir como o relatório PDF é gerado", 2026-10-07).
+
+24. **Ferramenta**: Typst, pelo pacote PyPI `typst`, que traz o compilador embutido (a máquina não tem pandoc nem LaTeX). Um template `.typ` faz o layout; o script Python lê `resultados/`, formata os números e os passa ao template como JSON (`sys.inputs`). Ponto de partida: branch descartável `prototipo/relatorio-pdf` (commit 08d050c), arquivos `src/prototipo_relatorio/candidato_a_typst/relatorio.typ`, `candidato_a_typst.py` e `comum.py`.
+25. **Fontes e cores**: o template usa fontes do sistema com as métricas das do enunciado: Carlito (Calibri) no texto e Liberation Mono (Courier New) nas matrizes de confusão. Sem elas, o Typst cai na fonte padrão. O f̄1 sai na fonte matemática do Typst. As cores dos cabeçalhos foram tiradas do enunciado: #E5DFEC (Tabela 1), #DAEEF3 (2 e 3), #FDE9D9 (4 e 5), #B2A1C7 (6 a 8).
+26. **Conteúdo das tabelas**: o rótulo "Desvio padrão amostral da idade" fica como no enunciado, embora o valor seja populacional (item 9); o separador decimal é o ponto; a linha "ruído" mostra o valor usado (0.05); não há texto fora das 8 tabelas (item 13).
+27. **Em aberto**: como exibir `max_depth=None` (o protótipo mostra "None"). Só importa se alguma hiperparametrização do CART usar profundidade ilimitada; decide-se no ticket do relatório final.
