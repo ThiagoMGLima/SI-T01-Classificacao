@@ -1,6 +1,6 @@
-# Decisões
+# Observações
 
-Decisões de base da Tarefa 1 (Classificação), tomadas ao traçar o mapa em 2026-10-07. Os termos seguem o `GLOSSARY.md`. Decisões tomadas depois ficam nos tickets do mapa no GitHub.
+Decisões de base da Tarefa 1 (Classificação), tomadas ao traçar o mapa em 2026-10-07, e observações sobre o que cada etapa produziu. Os termos seguem o `GLOSSARY.md`. Decisões tomadas depois ficam nos tickets do mapa no GitHub.
 
 ## Escopo
 
@@ -32,3 +32,12 @@ Decisões de base da Tarefa 1 (Classificação), tomadas ao traçar o mapa em 20
 ## Relatório
 
 13. **Geração**: o PDF é gerado automaticamente a partir de `resultados/`, contendo **somente** as 8 tabelas do enunciado. A ferramenta é decidida em ticket próprio.
+
+## Dataset de treino/validação
+
+Observado ao gerar o dataset (ticket "Gerar o dataset de treino/validação (10.000 vítimas)", 2026-10-07).
+
+14. **Contagens por classe de triagem após o ruído**: o gerador recebe 769/3000/3115/3116 vítimas por classe, mas troca a classe de triagem por uma vizinha em ~5% delas. A Tabela 1 traz as contagens após essa troca: 805/2966/3179/3050. `resultados/tabela1_dataset.json` guarda os dois conjuntos (`parametros_gerador` e `tabela_1`).
+15. **Idade abaixo dos parâmetros**: média 39,92 e DPA 23,20, contra os 40 e 25 passados ao gerador, porque ele limita a idade a [1, 90] e trunca para inteiro. A Tabela 1 usa os valores medidos (item 9).
+16. **Efeitos colaterais do gerador**: ao ser importado, ele cria `./datasets/vict/1300v/`, e sempre salva no caminho fixo `OUTPUT_CSV`. `src/gerar_dataset.py` contorna os dois sem editar o arquivo: importa o gerador a partir de uma pasta temporária e reaponta `OUTPUT_CSV` para `dados/`.
+17. **Colunas do CSV**: `dados/treino_validacao_10000v.csv` tem as 14 colunas do gerador; os scripts de treino precisam manter só as 10 características de entrada.

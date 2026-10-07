@@ -57,7 +57,7 @@ Diferença absoluta entre o F1 macro de treino e o de validação em um fold; a 
 _Avoid_: viés (ambíguo com o viés do modelo)
 
 **Melhor CART / Melhor RN**:
-A hiperparametrização, entre U, E e O, vencedora do critério de seleção registrado em `decisoes.md`.
+A hiperparametrização, entre U, E e O, vencedora do critério de seleção registrado em `observacoes.md`.
 _Avoid_: melhor modelo (sem dizer qual)
 
 **Retreino**:
