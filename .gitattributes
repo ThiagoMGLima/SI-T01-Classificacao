@@ -1,0 +1,3 @@
+# Arquivos de terceiros: versionar byte a byte (o gerador usa CRLF)
+vendor/** -text
+dados/** -text
